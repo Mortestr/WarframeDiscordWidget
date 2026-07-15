@@ -15,7 +15,7 @@ This setup allows you to display live-updating stats like Platinum, Credits, End
 
 Before setting up the data fields, you must ensure your Discord account is prepared for experimental widgets.
 
-Please follow this [Guid](https://www.youtube.com/watch?v=gYv7D83u7yQ) here to properly set up a Discord application and unlock the necessary widget functionalities.
+Please follow this [Guide](https://www.youtube.com/watch?v=gYv7D83u7yQ) here to properly set up a Discord application and unlock the necessary widget functionalities.
 
 
 ## Configuration Guide
@@ -49,7 +49,7 @@ add the following fields. Ensure the Value Type is set to `String` for all entri
 
 2. **Discord Application:**
    
-   Follow the [Guid at chloecinders.com](https://chloecinders.com/blog/discord-widgets#setting-up-a-discord-application) to create your Discord application.
+   Follow the [Guide from NTTS](https://www.youtube.com/watch?v=gYv7D83u7yQ) to create your Discord application.
    In the Developer Portal, navigate to your application and open the Widget tab under Games.
 
 4. **Connecting Data:**
