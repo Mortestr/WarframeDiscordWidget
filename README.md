@@ -41,7 +41,7 @@ add the following fields. Ensure the Value Type is set to `String` for all entri
 ### Follow these steps to link your Warframe data to your Discord profile:
 
 1. **AlecaFrame Setup:**
-   Ensure AlecaFrame is installed and running on your PC.
+   Ensure AlecaFrame is installed and running on your PC. ( INFO: AlecaFrame dosnt need to be running 24/7)
    In AlecaFrame, navigate to the Stats tab.
    
    Click on Create Public Link. Select the following resources: Platinum, Endo, Aya, Trades, Ducats, and Credits. and then Generate Link.
