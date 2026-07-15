@@ -108,19 +108,22 @@ add the following fields. Ensure the Value Type is set to `String` for all entri
 
    and activate `Fallback`
    
+  ## It should look like this after this ( the `Status` and `Latency` is just Deccoration )
 
+  <img width="224" height="179" alt="image" src="https://github.com/user-attachments/assets/ef607a9a-9c79-42e3-ac1d-41141608d801" />
 
 
 6. **(Optional) Convert Script to Executable**
    
-   Step 1: Ensure you have Python installed on your system.
+   Step 1: Ensure you have `Python` installed on your system.
 
-   Step 2: Install the necessary packaging tool by running pip install pyinstaller in your terminal.
+   Step 2: Install the necessary packaging tool by running `pip install pyinstaller` in your terminal.
 
    Step 3: Navigate to your script folder and run the following command:
-   pyinstaller --onefile main.py
+   
+   ` python -m PyInstaller --noconsole --onefile --name="NAME OF EXE" main.py`
 
-   Step 5 (Important): Make sure to copy your config.json file into the dist/ folder alongside the newly created .exe. The application requires this file in the same directory to function correctly.
+   Step 5 (Important): Make sure to copy your `config.json` file into the `dist/` folder alongside the newly created .exe. The application requires this file in the same directory to function correctly.
 
 
    
