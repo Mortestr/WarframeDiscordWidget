@@ -60,53 +60,52 @@ add the following fields. Ensure the Value Type is set to `String` for all entri
 ### Follow these steps to link your Warframe data to your Discord profile:
 
 1. **AlecaFrame Setup:**
-   Ensure AlecaFrame is installed and running on your PC. ( INFO: AlecaFrame dosnt need to be running 24/7)
-   In AlecaFrame, navigate to the Stats tab.
+* Ensure AlecaFrame is installed and running on your PC. ( INFO: AlecaFrame dosnt need to be running 24/7)
+* In AlecaFrame, navigate to the Stats tab.
    
-   Click on Create Public Link. Select the following resources: Platinum, Endo, Aya, Trades, Ducats, Account Data and Credits. and then Generate Link.
-   after that go into the config.json and under `alecaframe_token` paste in the link
+* Click on Create Public Link. Select the following resources: Platinum, Endo, Aya, Trades, Ducats, Account Data and Credits. and then Generate Link.
+* after that go into the config.json and under `alecaframe_token` paste in the link
 
 2. **Discord Application:**
    
-   Follow the Guide mentioned above to create your Discord application.
-   In the Developer Portal, navigate to your application and open the Widget tab under Games.
+* Follow the Guide mentioned above to create your Discord application.
+* In the Developer Portal, navigate to your application and open the Widget tab under Games.
 
 3. **Connecting Data:**
 
-   Under the Sample Data Fields section of your widget, add the fields listed in the table above.
-   Ensure the Value Type is strictly set to `String`. Like This:
+* Under the Sample Data Fields section of your widget, add the fields listed in the table above.
+* Ensure the Value Type is strictly set to `String`. Like This:
    
    <img width="1171" height="322" alt="image" src="https://github.com/user-attachments/assets/6555efa6-89ff-4354-9548-736b18f46ec9" />
 
-   Once you have created the fields, click into each stat to configure the specific appearance.
-   Match the settings as shown in this screenshot: ( do this for every string )
+* Once you have created the fields, click into each stat to configure the specific appearance.
+* Match the settings as shown in this screenshot: ( do this for every string )
    
    <img width="366" height="842" alt="image" src="https://github.com/user-attachments/assets/918ffe7a-d713-4e8e-9864-cb60935c4440" />
 
 ### Value:
 
-  Set `Presentation Type` to **Text**
+* Set `Presentation Type` to **Text**
   
-  **Value Type** to `User Data`
+* **Value Type** to `User Data`
   
-  and select the corresponding **Data Field** `(e.g., Endo)`.
+* and select the corresponding **Data Field** `(e.g., Endo)`.
   
-  Enable the `Fallback` **toggle**.
+* Enable the `Fallback` **toggle**.
    
 ### Label:
   
-  Set **Value Type** to `Custom String`
+* Set **Value Type** to `Custom String`
   
-  and enter your desired label `(e.g., ✨ Endo)`.
+* and enter your desired label `(e.g., ✨ Endo)`.
    
 ### Icon:
 
-  Enable the **Icon toggle**
+* Enable the **Icon toggle**
   
-  Set **Value Type** to `Application Asset`
-  
-  
-  And select the appropriate asset key for your icon. ( in this repo are all the icons i used )
+* Set **Value Type** to `Application Asset`
+
+* And select the appropriate asset key for your icon. ( in this repo are all the icons i used )
 
 ## **Warframe Name and Mastery Rank Display:**
   To display your in-game name and Mastery Rank (MR) in the widget header, follow these steps:
@@ -115,31 +114,31 @@ add the following fields. Ensure the Value Type is set to `String` for all entri
 
    Navigate to **Widget Top > Title.**
      
-     Set `Presentation Type` to Text.
+   * Set `Presentation Type` to Text.
      
-     Set `Value Type` to `User Data`.
+   * Set `Value Type` to `User Data`.
      
-     Set `Data Field` to `Name`.
+   * Set `Data Field` to `Name`.
      
-     Enable `Fallback`.
+   * Enable `Fallback`.
 
 2. **Configure Mastery Rank**
 
    Navigate to **Widget Top > Subtitle 1:**
    
-     Set `Value Type` to `Custom String`.
+   * Set `Value Type` to `Custom String`.
    
-     Set `Data Field` to **Mastery Rank**.
+   * Set `Data Field` to **Mastery Rank**.
 
-     Navigate to the Text tab:
+    Navigate to the Text tab:
 
-     set `Presentation Type` to Text.
+   * Set `Presentation Type` to Text.
    
-     Set `Value Typ` to `User Data`.
+   * Set `Value Typ` to `User Data`.
    
-     Set `Data Field` to `MR`.
+   * Set `Data Field` to `MR`.
    
-     Enable `Fallback`.
+   * Enable `Fallback`.
 
 **It should look like this after ( `Latency` and `Status` are just decoration)**
    
@@ -149,16 +148,20 @@ add the following fields. Ensure the Value Type is set to `String` for all entri
 
 5. **(Optional) Convert Script to Executable**
    
-   Step 1: Ensure you have `Python` installed on your system.
+* Step 1: Ensure you have `Python` installed on your system.
 
-   Step 2: Install the necessary packaging tool by running `pip install pyinstaller` in your terminal.
+* Step 2: Install the necessary packaging tool by running `pip install pyinstaller` in your terminal.
 
-   Step 3: Navigate to your script folder and run the following command:
+* Step 3: Navigate to your script folder and run the following command:
    
-   ` python -m PyInstaller --noconsole --onefile --name="NAME OF EXE" main.py`
+* ` python -m PyInstaller --noconsole --onefile --name="NAME OF EXE" main.py`
 
-   Step 5 (Important): Make sure to copy your `config.json` file into the `dist/` folder alongside the newly created .exe. The application requires this file in the same directory to function correctly.
+* Step 5 (Important): Make sure to copy your `config.json` file into the `dist/` folder alongside the newly created .exe. The application requires this file in the same directory to function correctly.
 
 
    
+## Show your support
 
+Give a ⭐️ if this project helped you!
+
+* Website: https://guns.lol/mortestr
