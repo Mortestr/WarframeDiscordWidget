@@ -49,7 +49,7 @@ add the following fields. Ensure the Value Type is set to `String` for all entri
 
 2. **Discord Application:**
    
-   Follow the [Guide from NTTS](https://www.youtube.com/watch?v=gYv7D83u7yQ) to create your Discord application.
+   Follow the Guide mentioned above to create your Discord application.
    In the Developer Portal, navigate to your application and open the Widget tab under Games.
 
 4. **Connecting Data:**
