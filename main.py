@@ -38,19 +38,27 @@ def fetch_warframe_stats(api_key):
         "balance_ducats": latest.get("ducats", 0),
         "balance_aya": latest.get("aya", 0),
         "balance_endo": latest.get("endo", 0),
+        "mastery_rank": latest.get("mr", 0),
+        "acc_name": data.get("usernameWhenPublic", "Tenno"),
     }
 
 def update_discord_widget(cfg, stats):
+
+    account_name = stats.get('acc_name', 'Tenno')
+    
     url = f"https://discord.com/api/v9/applications/{cfg['discord_application_id']}/users/{cfg['discord_user_id']}/identities/0/profile"
     headers = {"Authorization": f"Bot {cfg['discord_bot_token']}", "Content-Type": "application/json"}
     
     payload = {"data": {"dynamic": [
+        # Jetzt kennt Python die Variable 'account_name'
+        {"type": 1, "name": "Name", "value": f"{account_name}"},
         {"type": 1, "name": "Endo", "value": f"{stats['balance_endo']:,}"},
         {"type": 1, "name": "Platinum", "value": f"ㅤ{stats['balance_plat']:,}p"},
         {"type": 1, "name": "Credits", "value": f"{stats['balance_credits']:,}"},
         {"type": 1, "name": "Aya", "value": f"ㅤ{stats['balance_aya']:,}"},
         {"type": 1, "name": "Ducats", "value": f"ㅤ{stats['balance_ducats']:,}"},
-        {"type": 1, "name": "Trades", "value": f"ㅤ{stats['trades_count']:,}"}
+        {"type": 1, "name": "Trades", "value": f"ㅤ{stats['trades_count']:,}"},
+        {"type": 1, "name": "MR", "value": f"{stats['mastery_rank']}"}
     ]}}
     
     requests.patch(url, headers=headers, json=payload, timeout=10).raise_for_status()
