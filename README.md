@@ -44,7 +44,7 @@ add the following fields. Ensure the Value Type is set to `String` for all entri
    Ensure AlecaFrame is installed and running on your PC. ( INFO: AlecaFrame dosnt need to be running 24/7)
    In AlecaFrame, navigate to the Stats tab.
    
-   Click on Create Public Link. Select the following resources: Platinum, Endo, Aya, Trades, Ducats, and Credits. and then Generate Link.
+   Click on Create Public Link. Select the following resources: Platinum, Endo, Aya, Trades, Ducats, Account Data and Credits. and then Generate Link.
    after that go into the config.json and under `alecaframe_token` paste in the link
 
 2. **Discord Application:**
