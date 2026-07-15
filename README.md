@@ -15,7 +15,26 @@ This setup allows you to display live-updating stats like Platinum, Credits, End
 
 Before setting up the data fields, you must ensure your Discord account is prepared for experimental widgets.
 
-Please follow this [Guide](https://www.youtube.com/watch?v=gYv7D83u7yQ) here to properly set up a Discord application and unlock the necessary widget functionalities.
+Please follow this [Guide](https://www.youtube.com/watch?v=gYv7D83u7yQ) here to properly set up a Discord application and unlock the necessary widget functionalities.#
+
+To run this script, you need to have `Python` installed on your system. 
+Before running the script, you must install the required dependencies:
+
+`pip install requests pillow pystray`
+
+(Optional) `pip install pyinstaller`
+
+## Explanation of dependencies:
+
+`requests`: Used to communicate with the AlecaFrame API and update your Discord profile via the Discord API.
+
+`pillow`: Used to generate the system tray icon dynamically.
+
+`pystray`: Enables the script to run as a background application with an icon in your system tray.
+
+`pyinstaller`: (Optional, See step 5): Used to package the script into a single executable file.
+
+
 
 
 ## Configuration Guide
@@ -52,7 +71,7 @@ add the following fields. Ensure the Value Type is set to `String` for all entri
    Follow the Guide mentioned above to create your Discord application.
    In the Developer Portal, navigate to your application and open the Widget tab under Games.
 
-4. **Connecting Data:**
+3. **Connecting Data:**
 
    Under the Sample Data Fields section of your widget, add the fields listed in the table above.
    Ensure the Value Type is strictly set to `String`. Like This:
@@ -70,50 +89,51 @@ add the following fields. Ensure the Value Type is set to `String` for all entri
    
    Icon: Enable the Icon toggle, set Value Type to Application Asset, and select the appropriate asset key for your icon. ( in this repo are all the icons i used )
 
-5. **Warframe Name and Mastery Rank Display:**
-  
-   In order to see your Ingame name and Mastery Rank you need to do this:
+## **Warframe Name and Mastery Rank Display:**
+  To display your in-game name and Mastery Rank (MR) in the widget header, follow these steps:
 
-   **For Ingamename**
+1. **Initial Setup:**
+   Add two new `Strings` in your widget configuration:
+      `MR` (as String 7)
+      `Name` (as String 8)
+      
+2. **Configure In-game Name:**
+
+   Navigate to **Widget Top > Title.**
+     
+     Set `Presentation Type` to Text.
+     
+     Set `Value Type` to `User Data`.
+     
+     Set `Data Field` to `Name`.
+     
+     Enable `Fallback`.
+
+3. **Configure Mastery Rank**
+
+   Navigate to **Widget Top > Subtitle 1:**
    
-   first you need to add 2 new `Strings` MR as `String 7` and Name as `String 8`
-
-   Then you go to `Widget Top` and then to `Title`
-
-   Change `Presentation Type` to `Text`
-
-   `Value Type` to `User Data`
-
-   `Data Field` to `Name`
-
-   and enable `Fallback`
-
-   **For Mastery Rank**
-
-   Go to `Widget Top` and then to `Subtitle 1`
-
-   Change `Presentation Type` to `Text`
-
-   `Value Type` to `Custom String`
-
-   `Data Field` to `Mastery Rank`
-
-   Then Go to the `Text` Tab
-
-   Change `Presentation Type` to `Text`
-
-   `Value Type` to `User Data`
-
-   `Data Field` to `MR`
-
-   and activate `Fallback`
+     Set `Value Type` to `Custom String`.
    
-  ## It should look like this after this ( the `Status` and `Latency` is just Deccoration )
+     Set `Data Field` to **Mastery Rank**.
+
+     Navigate to the Text tab:
+
+     set `Presentation Type` to Text.
+   
+     Set `Value Typ` to `User Data`.
+   
+     Set `Data Field` to `MR`.
+   
+     Enable `Fallback`.
+
+**It should look like this after ( `Latency` and `Status` are just decoration)**
+   
 
   <img width="224" height="179" alt="image" src="https://github.com/user-attachments/assets/ef607a9a-9c79-42e3-ac1d-41141608d801" />
 
 
-6. **(Optional) Convert Script to Executable**
+5. **(Optional) Convert Script to Executable**
    
    Step 1: Ensure you have `Python` installed on your system.
 
