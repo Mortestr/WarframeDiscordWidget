@@ -9,13 +9,13 @@ A seamless way to display your Warframe progression and in-game economy directly
 Ever wanted to show off your current wealth, trading stats, or progress in Warframe? 
 By leveraging AlecaFrame—the most advanced companion app for Warframe—you can now bridge your in-game data with your Discord presence.
 
-This setup allows you to display live-updating stats like Platinum, Credits, Endo, Aya, Ducats, and Trade counts directly on your Discord profile board.
+This setup allows you to display live-updating stats like Platinum, Credits, Endo, Aya, Ducats, Account Stats and Trade counts directly on your Discord profile board.
 
 ## Prerequisites
 
 Before setting up the data fields, you must ensure your Discord account is prepared for experimental widgets.
 
-Please follow this [Guid](https://chloecinders.com/blog/discord-widgets#setting-up-a-discord-application) here to properly set up a Discord application and unlock the necessary widget functionalities.
+Please follow this [Guid](https://chloecinders.com/blog/discord-widgets#setting-up-a-discord-application](https://www.youtube.com/watch?v=gYv7D83u7yQ)](https://www.youtube.com/watch?v=gYv7D83u7yQ) here to properly set up a Discord application and unlock the necessary widget functionalities.
 
 
 ## Configuration Guide
@@ -34,6 +34,8 @@ add the following fields. Ensure the Value Type is set to `String` for all entri
 | `Aya` | String 4 | Your current amount of Aya |
 | `Ducats` | String 5 | Your current Ducat balance |
 | `Trades` | String 6 | Total number of trades completed |
+| `Name` | String 7 | Displays your IGN |
+| `MR` | String 8 | Displays your Mastery Rank |
 
 ## Setup Instructions
 ### Follow these steps to link your Warframe data to your Discord profile:
@@ -68,10 +70,48 @@ add the following fields. Ensure the Value Type is set to `String` for all entri
    
    Icon: Enable the Icon toggle, set Value Type to Application Asset, and select the appropriate asset key for your icon. ( in this repo are all the icons i used )
 
+5. **Warframe Name and Mastery Rank Display:**
+  
+   In order to see your Ingame name and Mastery Rank you need to do this:
+
+   **For Ingamename**
+   
+   first you need to add 2 new `Strings` MR as `String 7` and Name as `String 8`
+
+   Then you go to `Widget Top` and then to `Title`
+
+   Change `Presentation Type` to `Text`
+
+   `Value Type` to `User Data`
+
+   `Data Field` to `Name`
+
+   and enable `Fallback`
+
+   **For Mastery Rank**
+
+   Go to `Widget Top` and then to `Subtitle 1`
+
+   Change `Presentation Type` to `Text`
+
+   `Value Type` to `Custom String`
+
+   `Data Field` to `Mastery Rank`
+
+   Then Go to the `Text` Tab
+
+   Change `Presentation Type` to `Text`
+
+   `Value Type` to `User Data`
+
+   `Data Field` to `MR`
+
+   and activate `Fallback`
+   
 
 
 
-5. **(Optional) Convert Script to Executable**
+6. **(Optional) Convert Script to Executable**
    
    Step 1: Ensure you have Python installed on your system.
 
