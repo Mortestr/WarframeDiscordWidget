@@ -83,11 +83,30 @@ add the following fields. Ensure the Value Type is set to `String` for all entri
    
    <img width="366" height="842" alt="image" src="https://github.com/user-attachments/assets/918ffe7a-d713-4e8e-9864-cb60935c4440" />
 
-   Value: Set Presentation Type to Text, Value Type to User Data, and select the corresponding Data Field `(e.g., Endo)`. Enable the Fallback toggle.
+### Value:
+
+  Set `Presentation Type` to **Text**
+  
+  **Value Type** to `User Data`
+  
+  and select the corresponding **Data Field** `(e.g., Endo)`.
+  
+  Enable the `Fallback` **toggle**.
    
-   Label: Set Value Type to Custom String and enter your desired label `(e.g., ✨ Endo)`.
+### Label:
+  
+  Set **Value Type** to `Custom String`
+  
+  and enter your desired label `(e.g., ✨ Endo)`.
    
-   Icon: Enable the Icon toggle, set Value Type to Application Asset, and select the appropriate asset key for your icon. ( in this repo are all the icons i used )
+### Icon:
+
+  Enable the **Icon toggle**
+  
+  Set **Value Type** to `Application Asset`
+  
+  
+  And select the appropriate asset key for your icon. ( in this repo are all the icons i used )
 
 ## **Warframe Name and Mastery Rank Display:**
   To display your in-game name and Mastery Rank (MR) in the widget header, follow these steps:
