@@ -46,20 +46,21 @@ add the following fields. Ensure the Value Type is set to `String` for all entri
    after that go into the config.json and under `alecaframe_token` paste in the link
 
 2. **Discord Application:**
+   
    Follow the [Guid at chloecinders.com](https://chloecinders.com/blog/discord-widgets#setting-up-a-discord-application) to create your Discord application.
    In the Developer Portal, navigate to your application and open the Widget tab under Games.
 
-3. **Connecting Data:**
+4. **Connecting Data:**
 
    Under the Sample Data Fields section of your widget, add the fields listed in the table above.
    Ensure the Value Type is strictly set to `String`. Like This:
    
-   <img width="1313" height="259" alt="image" src="https://github.com/user-attachments/assets/c7f769ef-041d-4fcd-89df-75516baeea8d" />
+   <img width="1171" height="322" alt="image" src="https://github.com/user-attachments/assets/6555efa6-89ff-4354-9548-736b18f46ec9" />
 
    Once you have created the fields, click into each stat to configure the specific appearance.
    Match the settings as shown in this screenshot: ( do this for every string )
    
-   <img width="302" height="769" alt="image" src="https://github.com/user-attachments/assets/d9994b1a-67ca-4a29-8298-1294fc51a316" />
+   <img width="366" height="842" alt="image" src="https://github.com/user-attachments/assets/918ffe7a-d713-4e8e-9864-cb60935c4440" />
 
    Value: Set Presentation Type to Text, Value Type to User Data, and select the corresponding Data Field `(e.g., Endo)`. Enable the Fallback toggle.
    
@@ -70,7 +71,7 @@ add the following fields. Ensure the Value Type is set to `String` for all entri
 
 
 
-4. **(Optional) Convert Script to Executable**
+5. **(Optional) Convert Script to Executable**
    
    Step 1: Ensure you have Python installed on your system.
 
