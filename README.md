@@ -15,7 +15,7 @@ This setup allows you to display live-updating stats like Platinum, Credits, End
 
 Before setting up the data fields, you must ensure your Discord account is prepared for experimental widgets.
 
-Please follow this [Guid](https://chloecinders.com/blog/discord-widgets#setting-up-a-discord-application](https://www.youtube.com/watch?v=gYv7D83u7yQ)](https://www.youtube.com/watch?v=gYv7D83u7yQ) here to properly set up a Discord application and unlock the necessary widget functionalities.
+Please follow this [Guid](https://www.youtube.com/watch?v=gYv7D83u7yQ) here to properly set up a Discord application and unlock the necessary widget functionalities.
 
 
 ## Configuration Guide
