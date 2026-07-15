@@ -110,13 +110,8 @@ add the following fields. Ensure the Value Type is set to `String` for all entri
 
 ## **Warframe Name and Mastery Rank Display:**
   To display your in-game name and Mastery Rank (MR) in the widget header, follow these steps:
-
-1. **Initial Setup:**
-   Add two new `Strings` in your widget configuration:
-      `MR` (as String 7)
-      `Name` (as String 8)
       
-2. **Configure In-game Name:**
+1. **Configure In-game Name:**
 
    Navigate to **Widget Top > Title.**
      
@@ -128,7 +123,7 @@ add the following fields. Ensure the Value Type is set to `String` for all entri
      
      Enable `Fallback`.
 
-3. **Configure Mastery Rank**
+2. **Configure Mastery Rank**
 
    Navigate to **Widget Top > Subtitle 1:**
    
